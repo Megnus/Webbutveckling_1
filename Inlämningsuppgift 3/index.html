@@ -1,53 +1,78 @@
 <!--
-	Inlämningsuppgift 3
-	Magnus Sundström
-	2017-03-03
+Inlämningsuppgift 3
+Magnus Sundström
+2017-03-03
 -->
 
 <!doctype html>
 <html>
 <head>
-	<!-- https://en.wikipedia.org/wiki/List_of_alternative_rock_artists -->
 	<meta charset="utf-8">
 	<title>Inlämningsuppgift 3</title>
 	<style></style>
 </head>
 <body>
-<form>
-	<span>First name:</span>
-	<input type="text" name="firstname" value="Mickey">
-	<br><br>
-	<span>Last name:</span>
-	<input type="text" name="lastname" value="Mouse">
-	<br><br>
-	<input type="submit" value="Submit">
+	<form>
+		<span>Name:</span>
+		<input type="text" name="firstname">
+		<br><br>
+		<span>Age:</span>
+		<input type="number" name="lastname">
+		<br><br>
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+		<br><br>
+	</form>
+		<form action="">
+			<input type="radio" name="gender" value="Varje_vecka">Varje vecka<br>
+			<input type="radio" name="gender" value="Varannan_dag">Varannan dag<br>
+			<input type="radio" name="gender" value="Varje_vecka">Varje vecka
+		</form>
 
+		<form action="">
+			<input type="checkbox" name="topic" value="Nyheter">Nyheter<br>
+			<input type="checkbox" name="topic" value="Utrikes">Utrikes<br>
+			<input type="checkbox" name="topic" value="Inrikes">Inrikes<br>
+			<input type="checkbox" name="topic" value="Sport">Sport<br>
+			<input type="checkbox" name="topic" value="Skvaller">Skvaller<br>
+			<input type="checkbox" name="topic" value="Väder">Väder<br>
+			<input type="checkbox" name="topic" value="Övrigt">Övrigt<br>
+		</form>
+		Bästa med blomstermålabladet:
+		<textarea rows="4" cols="50"></textarea><br>
+		Sämsta med blomstermålabladet:
+		<textarea rows="4" cols="50"></textarea><br>
+		E-mail:
+		<input type="email" name="email"><br>
 
-
-37
-down vote
-accepted
-<form>
-<div id="form" style="width:500px;">
-   <fieldset>
-      <legend style="color:blue;font-weight:bold;">General Information</legend>
-      <table>
-         <tr>
-            <td>
-					<span>First name:</span>
-			</td>
-            <td>
-				<input type="text" name="firstname" value="Mickey">
-				<input type="text"/>
-			</td>
-         </tr>
-         <tr>
-            <td><span style="text-decoration:underline">C</span>onfirm Password:</td>
-            <td><input type="text"/></td>
-         </tr>
-      </table>
-   </fieldset>
-</div>
-</form>
-</body>
-</html>
+		<select>
+			<option value="XS">XS</option>
+			<option value="S">S</option>
+			<option value="M">M</option>
+			<option value="L">L</option>
+			<option value="XL">XL</option>
+		</select>
+		<form>
+			<div id="form" style="width:500px;">
+				<fieldset>
+					<legend style="color:blue;font-weight:bold;">General Information</legend>
+					<table>
+						<tr>
+							<td>
+								<span>First name:</span>
+							</td>
+							<td>
+								<input type="text" name="firstname" value="Mickey">
+								<input type="text"/>
+							</td>
+						</tr>
+						<tr>
+							<td><span style="text-decoration:underline">C</span>onfirm Password:</td>
+							<td><input type="text"/></td>
+						</tr>
+					</table>
+				</fieldset>
+			</div>
+		</form>
+	</body>
+	</html>
