@@ -1,41 +1,50 @@
-<!--
-Inlämningsuppgift 2
-Magnus Sundström
-2017-03-01
--->
-
+<!-- (Artistlista kommer från: https://en.wikipedia.org/wiki/List_of_alternative_rock_artists) -->
 <!doctype html>
+<!-- html-taggen berättar för browsern att det är ett html-dokument. -->
 <html>
+<!-- Head håller dokumentets metadata. -->
 <head>
-	<!-- https://en.wikipedia.org/wiki/List_of_alternative_rock_artists -->
+	<!-- Teckenkodningen för dokumentet. -->
 	<meta charset="utf-8">
-	<title>Inlämningsuppgift 2</title>
+	<!-- Dokumentets titel. -->
+	<title>Inlämningsuppgift 1</title>
+	<!-- Denna del håller utseendet för dokumentet. Vanligtvis kan denna placeras i en css fil. -->
 	<style>
-	th, td {
-		border: 1px solid black;
-		text-align: center;
-		padding: 10px;
-	}
-	td:nth-child(2) {
-		padding: 0px;
-		background-color: black;
-	}
-	ul {
-		text-align: left;
-	}
-	img {
-		width: 150px;
-		height: 120px;
-	}
+		/*Utseendet för vanliga- samt headerceller för en tabell.*/
+		th, td {
+			border: 1px solid black;
+			text-align: center;
+			padding: 10px;
+		}
+		/*Utseendet för den andra cellen i varje rad i tablellen.*/
+		td:nth-child(2) {
+			padding: 0px;
+			background-color: black;
+		}
+		/*Håller texten till vänster i en lista.*/
+		ul {
+			text-align: left;
+		}
+		/*Utseendet med storleken för en bild.*/
+		img {
+			width: 150px;
+			height: 120px;
+		}
 	</style>
 </head>
+<!-- Denna definierar dokumentkroppen och håller alla element som skall ingå i dokumentet. -->
 <body>
+	<!-- Tabellen som skall hålla våra band. -->
 	<table>
+		<!-- Bildtexten till tabellen. -->
 		<caption>
 			<h2>Table of bands from three diffrent countries</h2>
 		</caption>
+		<!-- Thead grupperar header element i tabellen. -->
 		<thead>
+			<!-- tr håller en grupp av td eller th. -->
 			<tr>
+				<!-- Dessa är header elementet i tabellen och defineras genom th. Dessa kommer att vara fetstilta per default. -->
 				<th>Name of band</th>
 				<th>Cover image</th>
 				<th>Members</th>
@@ -45,12 +54,16 @@ Magnus Sundström
 			</tr>
 		</thead>
 		<tbody>
+			<!-- tr håller en grupp av tr eller th. Detta kommer att definera en rad i vår tabell. -->
 			<tr>
+				<!-- td är vanliga cellelement som håller titeln för bandet. -->
 				<td>Babes in Toyland</td>
 				<td>
-					<img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/BabesPromo.jpg/220px-BabesPromo.jpg" alt="Broken link">
+					<!-- Bild på bandet skapas genom bildelementet img. -->
+					<img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/BabesPromo.jpg/220px-BabesPromo.jpg" >
 				</td>
 				<td>
+					<!-- Lista över bandmelemmar definerad av ul och li. -->
 					<ul>
 						<li>Kat Bjelland</li>
 						<li>Lori Barbero</li>
@@ -59,12 +72,14 @@ Magnus Sundström
 				</td>
 				<td>Selling of a Rock (1994)</td>
 				<td>Minneapolis, Minnesota, U.S.</td>
+				<!-- td med länk till bandets källreferens. -->
 				<td><a href="https://en.wikipedia.org/wiki/Dead_Can_Dance">Dead Can Dance - Wikipedia</a></td>
 			</tr>
+			<!-- Den andra raden i vår tabell. Se ovan för beskrivning av de ingående elmenten som följer nedan. -->
 			<tr>
 				<td>Dead Can Dance</td>
 				<td>
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dead_Can_Dance10.jpg/267px-Dead_Can_Dance10.jpg" alt="Broken link">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dead_Can_Dance10.jpg/267px-Dead_Can_Dance10.jpg" >
 				</td>
 				<td>
 					<ul>
@@ -81,7 +96,7 @@ Magnus Sundström
 			<tr>
 				<td>A Camp</td>
 				<td>
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/A_Camp_Stockholm_Pride_Festival_2009_1.jpg/200px-A_Camp_Stockholm_Pride_Festival_2009_1.jpg" alt="Broken link">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/A_Camp_Stockholm_Pride_Festival_2009_1.jpg/200px-A_Camp_Stockholm_Pride_Festival_2009_1.jpg" >
 				</td>
 				<td>
 					<ul>
@@ -97,7 +112,7 @@ Magnus Sundström
 			<tr>
 				<td>Caesars</td>
 				<td>
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Caesars2008.jpg/220px-Caesars2008.jpg" alt="Broken link">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Caesars2008.jpg/220px-Caesars2008.jpg" >
 				</td>
 				<td>
 					<ul>
@@ -114,7 +129,7 @@ Magnus Sundström
 			<tr>
 				<td>The Vamps</td>
 				<td>
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Vamps1sm.jpg/220px-Vamps1sm.jpg" alt="Broken link">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Vamps1sm.jpg/220px-Vamps1sm.jpg" >
 				</td>
 				<td>
 					<ul>
@@ -131,7 +146,7 @@ Magnus Sundström
 			<tr>
 				<td>Bo Kaspers Orkester</td>
 				<td>
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Bo_Kaspers_Orkester.jpg/220px-Bo_Kaspers_Orkester.jpg" alt="Broken link">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Bo_Kaspers_Orkester.jpg/220px-Bo_Kaspers_Orkester.jpg" >
 				</td>
 				<td>
 					<ul>
@@ -148,7 +163,7 @@ Magnus Sundström
 			<tr>
 				<td>Broken Bells</td>
 				<td>
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Brokenbells060810.jpg/220px-Brokenbells060810.jpg" alt="Broken link">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Brokenbells060810.jpg/220px-Brokenbells060810.jpg" >
 				</td>
 				<td>
 					<ul>
@@ -163,7 +178,7 @@ Magnus Sundström
 			<tr>
 				<td>Kaleidoscope</td>
 				<td>
-					<img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Side_Trips21.jpg/220px-Side_Trips21.jpg" alt="Broken link">
+					<img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Side_Trips21.jpg/220px-Side_Trips21.jpg" >
 				</td>
 				<td>
 					<ul>
