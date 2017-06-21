@@ -1,7 +1,7 @@
 <!--
 Inlämningsuppgift 3
 Magnus Sundström
-2017-03-03
+2017-06-21
 -->
 
 <!doctype html>
@@ -13,35 +13,37 @@ Magnus Sundström
 </head>
 <body>
 	<form action="http://webshare.mah.se/tszagh/response.php" method="post">
-		<span>Name:</span>
-		<input type="text" name="firstname">
-		<br><br>
-		<span>Age:</span>
-		<input type="number" name="lastname">
-		<br><br>
-		<input type="submit" value="Submit">
-		<input type="reset" value="Reset">
-		<br><br>
-	</form>
-	<form action="http://webshare.mah.se/tszagh/response.php" method="post">
-		<input type="radio" name="freq" value="every week">Varje dag<br>
-		<input type="radio" name="freq" value="every other day">Varannan dag<br>
-		<input type="radio" name="freq" value="every week">Varje vecka
-		<input type="submit" value="Submit">
-	</form>
-
-	<form action="http://webshare.mah.se/tszagh/response.php" method="post">
-		<input type="checkbox" name="visits[]" value="news">Nyheter<br>
-		<input type="checkbox" name="visits[]" value="foreign">Utrikes<br>
-		<input type="checkbox" name="visits[]" value="domestic">Inrikes<br>
-		<input type="checkbox" name="visits[]" value="sport">Sport<br>
-		<input type="checkbox" name="visits[]" value="gossip">Skvaller<br>
-		<input type="checkbox" name="visits[]" value="weather">Väder<br>
-		<input type="checkbox" name="visits[]" value="other">Övrigt<br>
-		<input type="submit" value="Submit">
-	</form>
-	<form action="http://webshare.mah.se/tszagh/response.php" method="post">
 		<fieldset>
+			<br>
+			<legend>Kontaktuppgifter</legend>
+			<span>Namn:</span>
+			<input type="text" name="name" required>
+			<br><br>
+			<span>Ålder:</span>
+			<input type="number" name="age" required>
+			<br><br>
+		</fieldset>
+		<fieldset>
+			<br>
+			<legend>Dina besök på blomstermålabladet</legend>
+			<legend>Hur ofta besöker du blomstermålabladet?</legend>
+			<input type="radio" name="freq" value="every week" required>Varje dag<br>
+			<input type="radio" name="freq" value="every other day" required>Varannan dag<br>
+			<input type="radio" name="freq" value="every week" required>Varje vecka<br>
+			<br>
+			<legend>Vilka delar av blomstermålabladet brukar du besöka?</legend>
+			<input type="checkbox" name="visits[]" value="news">Nyheter<br>
+			<input type="checkbox" name="visits[]" value="foreign">Utrikes<br>
+			<input type="checkbox" name="visits[]" value="domestic">Inrikes<br>
+			<input type="checkbox" name="visits[]" value="sport">Sport<br>
+			<input type="checkbox" name="visits[]" value="gossip">Skvaller<br>
+			<input type="checkbox" name="visits[]" value="weather">Väder<br>
+			<input type="checkbox" name="visits[]" value="other">Övrigt<br>
+			<br>
+		</fieldset>
+		<fieldset>
+			<br>
+			<legend>Vinn en T-shirt!</legend>
 			<p>Bästa med blomstermålabladet:</p>
 			<textarea rows="4" cols="50" name="best"></textarea><br>
 			<p>Sämsta med blomstermålabladet:</p>
@@ -49,45 +51,22 @@ Magnus Sundström
 			<p>E-mail:</p>
 			<input type="email" name="email"><br>
 			<p>Storlek:</p>
-			<select>
+			<select name="size">
 				<option value="XS">XS</option>
 				<option value="S">S</option>
 				<option value="M" selected>M</option>
 				<option value="L">L</option>
 				<option value="XL">XL</option>
 			</select>
-			<input type="submit" value="Submit">
+			<br>
 		</fieldset>
-	</form>
-	<form action="http://webshare.mah.se/tszagh/response.php" method="post">
-		<div id="form" style="width:500px;">
-			<fieldset>
-				<legend>General Information</legend>
-				<table>
-					<tr>
-						<td>
-							<span>First name:</span>
-						</td>
-						<td>
-							<input type="text" name="firstname" value="Mickey">
-							<!-- <input type="text"/> -->
-						</td>
-					</tr>
-					<tr>
-						<td><span style="text-decoration:underline">C</span>onfirm Password:</td>
-						<td><input type="text" name="password"/></td>
-					</tr>
-				</table>
-			</fieldset>
-		</div>
-
-		<input type="submit" value="Skicka">
-	</form>
-
-	<form method="post" action="http://webshare.mah.se/tszagh/response.php">
-		<p>Namn: <input type="text" name="name"></p>
-		<p>Meddelande: <input type="text" name="message"></p>
-		<input type="submit" value="Skicka formulär">
+		<fieldset>
+			<br>
+			<legend>Skicka/återställ</legend>
+			<input type="submit" value="Skicka">
+			<input type="reset" value="Återställ">
+			<br><br>
+		</fieldset>
 	</form>
 </body>
 </html>
